@@ -55,3 +55,7 @@
 5. **(Challenge) 27 to Hex**  
 16 + 11  
 → **1B**
+
+6. **(Challenge) 59 to Hex**
+48 + 11
+→ **3B**
