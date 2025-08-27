@@ -24,7 +24,7 @@ public class DecimalToAnyBase {
             if ((base & (base - 1)) == 0) {
                 int shift = (int)(Math.log(base) / Math.log(2));
                 while (num > 0) {
-                    int remainder = (int)(num & (base - 1)); // mask
+                    int remainder = (int)(num & (base - 1));
                     result.append(digits[remainder]);
                     num >>= shift;
                 }
