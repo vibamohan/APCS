@@ -9,7 +9,7 @@ public class TriviaGame {
         System.out.println("How do you say hello in Spanish?");
         String answer = sc.next();
         if( answer.equals("Hola")){
-            score = 1;
+            score++;
             System.out.println("good job!");  
         } else {
             System.out.println("sorry, wrong answer");
@@ -54,7 +54,6 @@ public class TriviaGame {
         System.out.println("What is the largest planet in our solar system?");
         answer = sc.next();
         if (answer.equals("Jupiter")) {
-            score = score + 1;
             score++;
             System.out.println("good job!");
         } else {
@@ -62,7 +61,7 @@ public class TriviaGame {
         }
 
         // q6
-        System.out.print("Who wrote : ");
+        System.out.print("what is the next number in the sequence : ");
         String expectedAns6 = "1 4 9 16 25";
         String userAns6 = sc.nextLine();
         if (userAns6.strip().toLowerCase().equals(expectedAns4)) {
@@ -72,6 +71,7 @@ public class TriviaGame {
             System.out.println("The answer was " + expectedAns4);
         }
 
+        System.out.println("your score was " + score);
         
     }
 }

@@ -91,7 +91,7 @@ public class Quiz {
                                 "     ||||||      ||||||\n" + //
                                 "     ||||||      ||||||");
             System.out.println("what is this mostly made of (singular): ");
-            String ans = sc.nextLine();
+            String ans = sc.next();
             if (ans.toLowerCase().equals("star")) {
                 System.out.println("correct!");
                 score++;
@@ -112,7 +112,7 @@ public class Quiz {
                                 "            [nn[nn..][nn..]\n" + //
                                 "        ~~~~~~~~~~~~~~~~~~~~~~~");
             System.out.println("what animal is this: ");
-            ans = sc.nextLine();
+            ans = sc.next();
             if (ans.strip().toLowerCase().equals("elephant")) {
                 System.out.println("correct!");
                 score++;
@@ -143,6 +143,7 @@ public class Quiz {
                                 "  '.         .'\n" + //
                                 "    '-------'");
             System.out.print("what type of instrument is this (2 words): ");
+            sc.nextLine();
             ans = sc.nextLine();
             if (ans.equals("acoustic guitar")) {
                 score++;

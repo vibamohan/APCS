@@ -3,10 +3,15 @@ import java.util.Scanner;
 public class Formulas {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        System.out.println("1. volume of a sphere");
+        System.out.println("2. 60-30-90");
+        System.out.println("3. pythagorean");
+        System.out.println("4. arithmetic term");
+        System.out.println("5. distance formula");
         String choice = sc.next();
 
         
-        if (choice == "1") {
+        if (choice.equals("1")) {
             System.out.println("volume of a sphere");
             System.out.println("what is the radius?");
             double radius = sc.nextDouble();
@@ -32,10 +37,6 @@ public class Formulas {
             
         }
         
-
-        }
-
-        // formula 4
         else if (choice.equals("4")) {
             System.out.println("\n Arithmetic term calculator");
             System.out.print("What is the first term: ");
