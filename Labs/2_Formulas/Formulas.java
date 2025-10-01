@@ -34,7 +34,7 @@ public class Formulas {
 
     // Choice 1
     public void areaTriangle() {
-        System.out.println("Area of a triangle")
+        System.out.println("Area of a triangle");
         System.out.print("Enter base of triangle: ");
         double base = scanner.nextDouble();
         System.out.print("Enter height of triangle: ");
