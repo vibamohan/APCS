@@ -6,8 +6,7 @@ public class Runner {
         int c = -1;
         while (c != 0) {
 
-                int choice = formulas.displayMenu();
-                Runnable callback = switch(choice) {
+                Runnable callback = switch(formulas.displayMenu()) {
                     case 0 -> () -> {
                         System.out.println("Thank you for using the formula calculator!");
                         formulas.closeScanner();
